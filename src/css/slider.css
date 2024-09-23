@@ -1,0 +1,83 @@
+.slider {
+    position: relative;
+    width: 85vw;  /* Ancho ajustado del slider */
+    height: 55vh; /* Altura ajustada del slider */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+    height: 100%;
+    width: 100%; /* Las imágenes ocuparán toda la anchura del slider */
+}
+
+.slides img {
+    width: 100%; /* La imagen ocupa toda la anchura del slider */
+    height: 100%; /* La imagen ocupa toda la altura del slider */
+    object-fit: cover; /* La imagen se ajusta perfectamente al tamaño del slider sin deformarse */
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navigation button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 5vw; /* Tamaño original de los botones de navegación */
+    height: 5vw; /* Tamaño original de los botones de navegación */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigation button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+[caption] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 6px;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+}
+h4{
+    font-family: 'Britanic';
+}
+
+[caption] h4 {
+    margin: 0 0 5px 0;
+}
+
+[caption] button {
+    background-color: #3498db;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}

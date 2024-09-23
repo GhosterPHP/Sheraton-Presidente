@@ -1,0 +1,232 @@
+header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    background-color: #88c6e300;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: height 0.5s ease-in-out, justify-content 1s linear, font-size 1s linear, opacity 1s linear, position 1s linear;
+
+}
+
+p[bienvenida] {
+    font-family: 'Congenial';
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+span[scrollindicador] {
+    position: absolute;
+    background-image: url('../icons/scroll.svg');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    left: 52%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+header.sticky {
+    position: fixed;
+    flex-direction: row;
+    top: 0;
+    width: 100%;
+    height: 11dvh;
+    justify-content: space-between;
+    background-color: #06234d;
+    color: rgb(255, 255, 255);
+    transition: height 0.8s ease-in-out, justify-content 1s linear, font-size 1s linear, opacity 1s linear, position 1s linear;
+    box-shadow: 0 0 10px #000;
+}
+
+header.sticky p[bienvenida] {
+    display: none;
+}
+
+header.sticky span[scrollindicador] {
+    display: none;
+}
+
+header.sticky #videobg {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+header.sticky div[logo] {
+    cursor: pointer;
+    text-shadow: none;
+    animation: none;
+}
+
+header.sticky div[logo] .Titulo {
+    font-size: 1.3em;
+}
+
+header.sticky div[logo] .Titulo .tiny {
+    font-size: 0.7em;
+}
+
+header.sticky div[logo] span[icon] {
+    width: 7dvw;
+    height: 7dvw;
+}
+
+header.sticky div[logo]:hover span[icon] {
+    transform: rotate(360deg);
+    transition: transform 0.5s linear;
+}
+
+header.dark {
+    background-color: #000000;
+    transition: background-color 1s linear;
+}
+
+
+div[logo] {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-shadow: 2px 2px 4px #000;
+    animation: wave 2s infinite;
+}
+
+#videobg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background-size: cover;
+    visibility: visible;
+    transition: opacity 1.5s ease, visibility 1.5s ease;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Dropdown Menu */
+nav ul li {
+    position: relative;
+    display: inline;
+    color: #fff;
+    font-family: "Mona Lisa medium";
+    font-size: 14px;
+    transition: color 0.8s linear;
+    margin: 0 8px;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li .dropdown li a {
+    display: block;
+    padding: 8px;
+    color: #0d0c22;
+    border-radius: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+nav ul li .dropdown li a:hover {
+    color: #000000;
+    border-radius: 30%;
+}
+
+nav ul li:hover {
+    color: #302f49;
+    border-radius: 45px;
+    padding: 3px;
+    transition: color 2.0s linear;
+}
+
+.Titulo {
+    font-family: 'Britanic';
+    font-size: 5em;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 40px;
+}
+
+.Titulo .tiny {
+    font-size: 1em;
+}
+
+span[icon] {
+    background-image: url('../icons/logo2.png');
+    background-size: cover;
+    width: 30dvw;
+    height: 30dvw;
+}
+
+span[arrow] {
+    background-image: url('../icons/arrow.svg');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    filter: invert(1);
+}
+
+a[drop] {
+    display: flex;
+}
+
+.poseido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100dvw;
+    height: 100%;
+    background: #0000004f;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    animation: fadeIn 1.6s ease-in-out;
+    transition: display 1s linear;
+    transition-behavior: allow-discrete
+}

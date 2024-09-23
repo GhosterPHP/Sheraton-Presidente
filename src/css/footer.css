@@ -1,0 +1,45 @@
+    /* Pie de Página */
+    .footer {
+        padding-top: 20dvh;
+        background-color: #f5f5f5; /* Blanco crema */
+        color: #262626; /* Color del texto */
+        padding: 11px 0;
+        text-align: center;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    .footer .footer-logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .footer .footer-copy .footer-info{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .contact-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .contact-item {
+        margin: 0 15px;
+        display: flex;
+        align-items: center;
+    }
+    .contact-item i {
+        margin-right: 10px;
+        color: #007bff;
+    }
+    .contact-item span {
+        font-size: 1rem;
+        color: #333;
+    }
