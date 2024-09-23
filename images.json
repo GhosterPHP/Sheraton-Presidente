@@ -1,0 +1,22 @@
+
+[
+    {
+        "src" : "src/images/fotos general/220t0v000000jl1ys642F_W_1280_853_R5.webp",
+        "title" : "Salón Perla de Luna",
+        "description" : "Descubre el esplendor y la sofisticación del Salón Perla de Luna, un espacio exclusivo en nuestro hotel 5 estrellas diseñado para ofrecerte una experiencia inolvidable. Con una decoración que fusiona la elegancia clásica con un toque moderno, este salón es el lugar perfecto para eventos y celebraciones de alto nivel.",
+        "url" : ""
+    },
+    {
+        "src" : "src/images/fotos general/0200x120009h0jrfr1DBF_W_1280_853_R5.webp",
+        "title" : "Piscina Tritón",
+        "description" : "Sumérgete en el lujo y la relajación en nuestra Área de Piscina, un oasis de tranquilidad y sofisticación diseñado para ofrecerte una experiencia de descanso inigualable. Ubicada en un entorno natural impresionante, nuestra piscina de diseño moderno y elegante se convierte en el lugar ideal para disfrutar de momentos de ocio bajo el sol o en la serenidad de la noche.",
+        "url" : ""
+    },
+    {
+        "src" : "src/images/bar/bar-lounge.jpg",
+        "title" : "Sol de Media Noche",
+        "description" : "Bienvenido al Bar Sol de Media Noche, un rincón de elegancia y sofisticación diseñado para ofrecerte una experiencia de ocio inigualable. Situado en el corazón de nuestro hotel 5 estrellas, este exclusivo bar combina un ambiente cálido y acogedor con un estilo moderno y vibrante, creando el lugar perfecto para relajarte y socializar.",
+        "url" : ""
+    }
+    
+]

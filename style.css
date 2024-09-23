@@ -1,0 +1,85 @@
+/* Imports css files */
+@import url('./src/css/header.css');
+@import url('./src/css/slider.css');
+@import url('./src/css/card.css');
+@import url('./src/css/footer.css');
+@import url('./src/css/bootstrap-icons.min.css');
+@import url('./src/css/all.min.css');
+
+/* Font Faces */
+@font-face {
+    font-family: 'Britanic';
+    src: url('./src/fonts/Britanic.ttf');
+}
+
+@font-face {
+    font-family: 'Congenial';
+    src: url('./src/fonts/Congenial.otf');
+}
+
+@font-face {
+    font-family: 'Mona Lisa medium';
+    src: url("./src/fonts/MonaLisamedium.woff2");
+}
+/* Keyframes */
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Global Styles */
+body {
+    background-color: #252525;
+    margin: 0;
+    padding: 0;
+    transition: 0.9s background-color;
+}
+
+p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+   
+    list-style-type: none;
+}
+
+main {
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: absolute;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+main.sticky {
+    z-index: -1;
+    padding-top: 20dvh;
+ 
+    opacity: 1;
+    transition: margin-top 0.8s ease, opacity 1s linear;
+
+}
+h2{
+    text-align: center;
+    transition: 0.9s color;
+    color: black;
+}
+
