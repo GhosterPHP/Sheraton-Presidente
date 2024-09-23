@@ -1,0 +1,14 @@
+{
+    "name": "mi-proyecto/alertapayaso",
+    "description": "Una aplicación PHP de ejemplo",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MiProyecto\\MiApp\\": "src/"
+        }
+    }
+}
